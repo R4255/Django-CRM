@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+{%block content%}
+<h1>Customer Record:</h1>
+    <br>
+    <h6> NAME: {{customer_record.first_name}} {{customer_record.last_name}}</h6>
+    <h6>Email: {{customer_record.email}}</h6>
+    <h6>Phone: {{customer_record.phone}}</h6>
+    <h6>City: {{customer_record.city}}</h6>
+    <h6>State: {{customer_record.state}}</h6>
+    <h6>Created: {{customer_record.created_at}}</h6>
+<br>
+    <a href="{%url 'home'%}" class="btn btn-primary">Back</a>
+    <a href="{%url 'delete_record' customer_record.id%}" class="btn btn-danger">Delete</a>
+    <a href="{%url 'update_record' customer_record.id%}" class="btn btn-secondary">Update</a>
+    
+{%endblock%}
