@@ -1,0 +1,1 @@
+Django CRM is a Customer Relationship Management system built using Django, a high-level Python web framework. It provides a platform for managing customer interactions, tracking leads, and streamlining sales processes.
